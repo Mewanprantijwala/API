@@ -7,7 +7,7 @@ const ViewUsers = () => {
   const [search, setSearch] = useState("");
   const[getSort,setSort]= useState("")
   const navigate = useNavigate();
-  const URL = "https://67d0e3d1825945773eb23066.mockapi.io/Users";
+  const URL = "https://67f351c1ec56ec1a36d568c5.mockapi.io/user";
 
   const fetchUsers = async () => {
     try {
@@ -88,7 +88,7 @@ const ViewUsers = () => {
             <tr>
               <th>#</th>
               <th>Name</th>
-              <th>Email</th>
+              <th>product Name</th>
               <th>Price</th>
               <th>Actions</th>
             </tr>
@@ -98,7 +98,7 @@ const ViewUsers = () => {
               <tr key={user.id}>
                 <td>{index + 1}</td>
                 <td>{user.name}</td>
-                <td>{user.email}</td>
+                <td>{user.manufacturer}</td>
                 <td>{user.price}</td>
                 <td>
                   <button

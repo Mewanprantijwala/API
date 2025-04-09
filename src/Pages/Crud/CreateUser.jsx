@@ -8,7 +8,7 @@ const CreateUser = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const userId = searchParams.get("id");
-  const URL = "https://67d0e3d1825945773eb23066.mockapi.io/Users";
+  const URL = "https://67f351c1ec56ec1a36d568c5.mockapi.io/user";
 
   useEffect(() => {
     if (userId) {

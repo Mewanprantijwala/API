@@ -3,19 +3,19 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const navStyle = {
-    backgroundColor: "#007bff",
     padding: "12px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    boxShadow: "0 4px 8px rgba(126, 65, 65, 0.1)",
   };
 
   const navLinkStyle = {
     fontSize: "1.1rem",
     marginRight: "15px",
-    color: "white",
+    color: "blue",
   };
 
   const navLinkHover = {
-    color: "#ffd700",
+    color: "#f8f9fa",
+    textDecoration: "underline",
   };
 
   return (
@@ -23,10 +23,15 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg" style={navStyle}>
         <div className="container">
           <NavLink className="navbar-brand fw-bold" to="/" style={navLinkStyle}>
-            User Manager
+          Car Autoparts stor
           </NavLink>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/UserHome" style={navLinkStyle}>
+                  🏠 Home
+                </NavLink>
+              </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/" style={navLinkStyle}>
                   📋 User List
